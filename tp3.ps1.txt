@@ -1,0 +1,11 @@
+[int]$limite = Read-Host "Por favor ingrese un número límite"
+
+for ($i = 1; $i -le $limite; $i++) {
+    $hora = Get-Date
+    
+    if ($i % 2 -eq 0) {
+        Write-Host "El número $i es par - Hora: $hora"
+    } else {
+        Write-Host "El número $i es impar - Hora: $hora"
+    }
+}
